@@ -39,11 +39,18 @@ class MapEndpoint(Resource):
         return {"message": "Map endpoint"}
 
 
+# add health check endpoint
+class HealthCheckEndpoint(Resource):
+    def get(self):
+        return {"message": "OK"}
+
+
 app = Flask(__name__)
 api = Api(app)
 
 api.add_resource(IdentifyVehicleEndpoint, "/identify_vehicle")
 api.add_resource(MapEndpoint, "/map")
+api.add_resource(HealthCheckEndpoint, "/health")
 
 if __name__ == "__main__":
     app.run(debug=True)
