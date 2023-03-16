@@ -1,4 +1,11 @@
-# Hackathon Backend
+# Vehicle Identification Service
+
+## Description
+Simple backend to identify a vehicle model based on an image. This service calls an external API (CarNET) to get the vehicle model.
+
+## [How we used the AI tools to generate this project](documentation/WORKFLOW.md)
+
+
 
 ## Install
 * Create virtual env
