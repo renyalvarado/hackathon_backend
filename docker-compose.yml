@@ -1,0 +1,10 @@
+version: '3.7'
+# insert services based on Dockerfile
+services:
+  # insert service name
+  backend:
+    env_file:
+      - local.env
+    build: .
+    ports:
+      - "5000:5000"
