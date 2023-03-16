@@ -16,13 +16,11 @@ class IdentifyVehicleEndpoint(Resource):
         # read image from request
         image = request.files["image"]
         payload = {}
-        image_file_object = (
-            (
+        image_file_object = [
                 image.filename,
                 image.stream,
                 image.content_type,
-            ),
-        )
+        ]
         files = [("imageFile", image_file_object)]
         headers = {"Cookie": CARNET_COOKIE}
 
