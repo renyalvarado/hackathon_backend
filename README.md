@@ -14,6 +14,9 @@
   $ pip install -r requirements.txt
   ```
 
+* Go to CarNET site and copy your cookies (using your browser developer tool in https://carnet.ai/#free-tire) in ``local.env`` and also set the ``CARNET_URL``
+
+
 * Load environment variables
 ```shell
   $ set -a && source local.env
